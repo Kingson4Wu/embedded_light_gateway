@@ -8,4 +8,5 @@
  */
 
 rootProject.name = "embedded_light_gateway"
-include("lib")
+include("tools")
+include("web")

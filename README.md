@@ -8,4 +8,4 @@
 
 ---
 
-+ `sh gradlew idea -Dorg.gradle.java.home=/usr/local/jdk-19.0.2.jdk/Contents/Home/`
++ `sh gradlew idea -Dorg.gradle.java.home=/Users/kingsonwu/soft/jdk-19.0.2.jdk/Contents/Home/`
