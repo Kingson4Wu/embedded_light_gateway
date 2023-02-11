@@ -9,20 +9,34 @@
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
+    `idea`
 }
 
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
     // Use JUnit test framework.
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.powermock:powermock-api-mockito2:2.0.9")
+    testImplementation("org.powermock:powermock-module-junit4:2.0.9")
+    testImplementation("org.mockito:mockito-core:5.1.1")
+
 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api("org.apache.commons:commons-math3:3.6.1")
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation("com.google.guava:guava:31.1-jre")
+    implementation("io.netty:netty-all:4.1.87.Final")
+    implementation("org.apache.commons:commons-lang3:3.12.0")
+    implementation("org.apache.commons:commons-collections4:4.4")
+    implementation("com.github.rholder:guava-retrying:2.0.0")
+    implementation("org.slf4j:slf4j-api:2.0.6")
+
+
+
 }
